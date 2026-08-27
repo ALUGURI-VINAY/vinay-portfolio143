@@ -241,107 +241,95 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 7. Data Matrices for Multi-Purpose Modals
   const experienceData = {
-    turing: {
-      tag: "EXPERIENCE RETROSPECTIVE // SECURE PIPELINE",
+    turing_ai: {
+      tag: "EXPERIENCE RETROSPECTIVE // PRODUCTION AI",
+      title: "AI Engineer (Turing — Freelance, Remote)",
+      desc: "Owned end-to-end delivery of RAG and multi-agent AI systems, from architecture design through production deployment on AWS. Led integration of multiple LLM providers (OpenAI, Claude, Gemini, Groq) into production workflows, ensuring reliable, context-aware responses at scale. Drove adoption of evaluation practices across projects—tracking retrieval accuracy, groundedness, latency, and hallucination rate to guide iteration. Integrated agentic AI frameworks and automation tools (LangChain, CrewAI, MCP, n8n) to build scalable backend services and automated workflows.",
+      tech: ["Python", "FastAPI", "LangChain", "CrewAI", "MCP", "n8n", "OpenAI", "Claude", "Gemini", "Groq", "AWS EC2", "CI/CD"],
+      actionLink: "mailto:vinayaluguru@gmail.com",
+      actionText: "CONTACT VIA EMAIL"
+    },
+    turing_s2: {
+      tag: "EXPERIENCE RETROSPECTIVE // TRAJECTORY ALIGNMENT",
+      title: "LLM S2 Annotator — CUA Specialist (Turing)",
+      desc: "Created Computer Use Agent (CUA) trajectories from natural-language instructions to align multi-step agent behavior. Evaluated AI-generated outputs for reasoning quality, factual accuracy, safety compliance, and strict instruction adherence. Performed prompt evaluation, pairwise (SxS) response ranking, and automated hallucination detection across complex outputs. Investigated workflow and execution failures through systematic trace analysis and tool-call validation.",
+      tech: ["CUA Trajectories", "SxS Ranking", "Hallucination Detection", "Trace Analysis", "Tool-Call Validation", "Model Alignment"],
+      actionLink: "mailto:vinayaluguru@gmail.com",
+      actionText: "CONTACT VIA EMAIL"
+    },
+    turing_agentic: {
+      tag: "EXPERIENCE RETROSPECTIVE // MODEL TRAINING",
       title: "LLM Agentic Trainer (Turing)",
-      desc: "Designed and engineered complex multi-step AI agent workflows utilizing Python scripts and third-party API configurations. Built secure orchestration pipelines with automated loop structures, self-correction algorithms, retry boundaries, and JSON-based output validation schemas. Optimized foundation models via Chain-of-Thought (CoT) and ReAct prompt engineering on golden training sets.",
-      tech: ["Python Core", "JSON Schemas", "n8n Workflows", "API Integrations", "LLM Evaluation", "Chain-of-Thought", "ReAct Paradigms"],
+      desc: "Trained AI/LLM models using Python, SQL, Git, JSON, and TAU tools across consecutive AI engineering workflows. Designed and developed agentic workflows, JSON-based task structures, and tool-integration setups for multi-step execution. Applied prompt engineering (Zero-shot, Few-shot, Chain-of-Thought, ReAct) and RLHF-based evaluation methodologies to improve model reasoning, trajectory accuracy, and output quality.",
+      tech: ["Python", "SQL", "Git", "JSON", "TAU Tools", "Chain-of-Thought", "ReAct Paradigm", "RLHF Evaluation"],
       actionLink: "mailto:vinayaluguru@gmail.com",
-      actionText: "DE-ORBIT RETROSPECTIVE LOGS"
-    },
-    kodnest: {
-      tag: "EXPERIENCE RETROSPECTIVE // BACKEND NODE",
-      title: "Java Full Stack Intern (Kodnest)",
-      desc: "Architected RESTful Web APIs and robust server logic infrastructures using Core Java, SQL databases, and spring frameworks. Designed optimized relational SQL query parameters and verified CRUD database integrations, debugging concurrency performance blocks for client applications.",
-      tech: ["Java Core", "RESTful Web APIs", "Spring MVC", "SQL Database Core", "CRUD Operations", "Backend Debugging"],
-      actionLink: "mailto:vinayaluguru@gmail.com",
-      actionText: "RETRIEVE API METADATA"
-    },
-    globalquest: {
-      tag: "EXPERIENCE RETROSPECTIVE // VALIDATION ENGINE",
-      title: "Software Testing Intern (Global Quest)",
-      desc: "Executed detailed functional, performance validation, and regression testing schedules for enterprise clients. Recorded granular defect logs, collaborated actively with developers inside iterative SDLC sprints, and successfully verified system patch integrity.",
-      tech: ["Sanity Testing", "Regression Pipelines", "Defect Logging", "System Debugging", "SDLC Integration", "Collaborative Testing"],
-      actionLink: "mailto:vinayaluguru@gmail.com",
-      actionText: "DISPATCH LOG AUDITS"
+      actionText: "CONTACT VIA EMAIL"
     }
   };
 
   const skillsData = {
-    agents: {
-      tag: "INTELLIGENCE MATRIX // SYSTEMS ARCHITECT",
-      title: "AI Agents & Workflows",
-      desc: "Designed and scaled autonomous agent graphs featuring conditional routers, self-correcting logic, context memory nodes, and functional tool-calling. Experienced in building multi-agent swarms that delegate tasks, evaluate results, and structure reports automatically.",
-      tech: ["n8n Graphs", "Multi-Agent Swarms", "Tool Calling APIs", "Context Memory Nodes", "Conditional Branching"]
+    llm_stack: {
+      tag: "INTELLIGENCE MATRIX // CORE STACK",
+      title: "Core LLM Stack & Backend",
+      desc: "Deep hands-on proficiency in building backend microservices with Python and FastAPI. Expert in LangChain pipelines, SQL database design, REST API integrations, and async workflow execution.",
+      tech: ["Python", "FastAPI", "LangChain", "SQL", "REST APIs", "Microservices"]
     },
-    prompting: {
-      tag: "INTELLIGENCE MATRIX // COGNITIVE ALIGNMENT",
-      title: "Prompt Engineering & LLM Eval",
-      desc: "Created robust and reproducible Chain-of-Thought (CoT), ReAct, Zero-shot, and Few-shot formatting pipelines. Established automated prompt testing harnesses utilizing custom datasets and grading heuristics to optimize model accuracy and prevent hallucinations.",
-      tech: ["Chain-of-Thought", "ReAct Paradigm", "Hallucination Audits", "Fidelity Evaluation", "System Prompts"]
+    genai: {
+      tag: "INTELLIGENCE MATRIX // GENERATIVE AI",
+      title: "Generative AI & Vector Engines",
+      desc: "Architecting context-aware AI systems leveraging LLM internals, prompt tuning, embeddings generation, and vector index architectures (ChromaDB, FAISS, Pinecone) for high-performance semantic retrieval.",
+      tech: ["LLM Internals", "Prompt Tuning", "Embeddings", "ChromaDB", "FAISS", "Pinecone"]
     },
-    rag: {
-      tag: "INTELLIGENCE MATRIX // INGESTION ENGINE",
-      title: "RAG & Structured Outputs",
-      desc: "Integrated semantic vector indices, developed sliding-window token chunking algorithms, and created dynamic query rewriting layers. Mastered structured data extractions using function-calling and strict JSON schema adherence rules.",
-      tech: ["Vector Embeddings", "Semantic Indexing", "Function Calling APIs", "JSON Schemas", "Pydantic Validation"]
+    agents_rag: {
+      tag: "INTELLIGENCE MATRIX // AGENTS & RAG",
+      title: "Agent Workflows & RAG",
+      desc: "Building production RAG pipelines and multi-agent orchestrations with CrewAI and MCP (Model Context Protocol). Implementing semantic search, tool calling, and automated hallucination detection.",
+      tech: ["CrewAI", "MCP Protocol", "RAG", "Semantic Search", "Tool Calling", "Hallucination Detection"]
     },
-    python: {
-      tag: "DEVELOPMENT MATRIX // CORE HUB",
-      title: "Python & Backend Systems",
-      desc: "Built high-performance backend pipelines, clean data extraction engines, REST APIs, and database adapters using Python core libraries, Java, and SQL databases. Highly competent in debugging complex systems code.",
-      tech: ["Python", "Java Core", "SQL Databases", "REST APIs", "Query Optimizations"]
+    frameworks: {
+      tag: "DEVELOPMENT MATRIX // FRAMEWORKS & TOOLS",
+      title: "AI Frameworks & Ecosystem",
+      desc: "Extensive experience across modern AI developer tooling: LangChain, Hugging Face Transformers, CrewAI, MCP, n8n visual flow automation, Cursor AI IDE, Claude Code CLI, and GitHub Copilot.",
+      tech: ["LangChain", "Hugging Face", "CrewAI", "MCP", "n8n", "Cursor", "Claude Code", "GitHub Copilot"]
     },
-    n8n: {
-      tag: "DEVELOPMENT MATRIX // ORCHESTRATION PIPELINE",
-      title: "n8n Automation & Pipelines",
-      desc: "Engineered visually mapping automations with n8n nodes, configuring complex conditional branching loops, data parsing scripts, cloud webhooks triggers, and robust error-handling pipelines.",
-      tech: ["n8n Node Workflows", "API Webhooks", "Trigger Pipelines", "Loops & Data Mapping", "System Error Catching"]
+    cloud_devops: {
+      tag: "DEVELOPMENT MATRIX // CLOUD & DEVOPS",
+      title: "AWS Cloud, Docker & DevOps",
+      desc: "Deploying production AI services to AWS EC2 and Docker containers with automated CI/CD pipelines via GitHub Actions. Expertise in containerization, environment isolation, REST API microservices scaling, and Git workflows.",
+      tech: ["AWS EC2", "Docker", "Containerization", "Git", "GitHub Actions", "CI/CD Pipelines", "Docker Compose"]
     },
-    langchain: {
-      tag: "DEVELOPMENT MATRIX // FRAMEWORKS",
-      title: "AI Frameworks & Platforms",
-      desc: "Utilised foundation platforms including LangChain libraries, Botpress conversation graphs, model provider APIs (OpenAI, Claude, Gemini), and modern environments such as Cursor AI and GitHub Copilot.",
-      tech: ["LangChain", "Botpress Graphs", "Model APIs", "Cursor IDE", "AI Dev Tools"]
+    eval_collab: {
+      tag: "DEVELOPMENT MATRIX // EVALUATION",
+      title: "Evaluation & Engineering Practices",
+      desc: "Rigorously measuring AI quality: retrieval relevance, accuracy, groundedness, latency, and hallucination rate to guide iterative development. Strong technical documentation and cross-functional leadership.",
+      tech: ["Retrieval Accuracy", "Groundedness", "Latency Optimization", "SxS Ranking", "Technical Writing"]
     }
   };
 
   const certsData = {
     microsoft: {
-      tag: "VERIFIED CREDENTIAL // SECURE AGENTS",
-      title: "Applied Agentic AI: Systems Design & Impact",
-      desc: "Verified Microsoft Professional credential issued in 2026. Focuses on architecting multi-agent systems, designing loop-correction safeguards, evaluating system safety standards, and auditing autonomous agent societal impact.",
-      tech: ["Microsoft Certified", "Systems Architecture", "AI Ethics Matrix", "Autonomous Safeguards"]
+      tag: "VERIFIED CREDENTIAL // MICROSOFT",
+      title: "Applied Agentic AI: Systems Design and Impact",
+      desc: "Professional certification from Microsoft covering agentic AI systems design, multi-agent orchestration patterns, system safety evaluation, and real-world deployment impact.",
+      tech: ["Microsoft Certified", "Agentic AI", "Systems Design", "Safety & Impact"]
     },
     claude: {
-      tag: "VERIFIED CREDENTIAL // ANTHROPIC CLI",
+      tag: "VERIFIED CREDENTIAL // ANTHROPIC",
       title: "Claude Code in Action",
-      desc: "Verified Anthropic credential issued in 2026. Attained deep technical competency using the terminal-based Claude Code developer agent tool for automated testing, debugging pipelines, and git logs management.",
-      tech: ["Claude Code", "Anthropic Terminal", "Git Pipelines", "Automated Audits"]
+      desc: "Professional certification from Anthropic demonstrating mastery of Claude Code CLI for autonomous terminal-based coding, test generation, and codebase refactoring.",
+      tech: ["Anthropic Certified", "Claude Code CLI", "Autonomous Coding", "Refactoring"]
     },
     internals: {
-      tag: "VERIFIED CREDENTIAL // LLM MECHANICS",
-      title: "MSAGI: LLM Internals & Planning Systems",
-      desc: "Verified MSAGI credential issued in 2026. Covers foundation model inner mechanics: multi-head attention systems, token embeddings, decoding architectures, and visual reasoning paths.",
-      tech: ["LLM Internals", "Attention Layers", "Decoding Mechanics", "Planning Architectures"]
+      tag: "VERIFIED CREDENTIAL // MSAGI",
+      title: "MSAGI – LLM Internals and Planning Systems",
+      desc: "Advanced certification covering LLM architecture internals, self-attention mechanics, multi-step planning algorithms, and trajectory optimization.",
+      tech: ["MSAGI Certified", "LLM Internals", "Planning Systems", "Attention Mechanics"]
     },
-    multiagent: {
-      tag: "VERIFIED CREDENTIAL // SWARM NETWORK",
-      title: "MSAGI: Multi-Agent Swarms & Planning",
-      desc: "Verified MSAGI credential issued in 2026. Specialization in distributed agent communications, task delegation, consensus algorithms, and multi-agent coordination frameworks.",
-      tech: ["Multi-Agent swarms", "Consensus Algorithms", "Task Allocation", "Inter-Agent Channels"]
-    },
-    english: {
-      tag: "VERIFIED CREDENTIAL // LINGUISTIC NODE",
-      title: "EF SET C1 English Node",
-      desc: "Verified EF SET credential. Certified at C1 Advanced English proficiency. Strong capability in handling technical system documentation, cross-border remote collaborations, and advanced presentations.",
-      tech: ["C1 Advanced", "Remote Collaboration", "Technical Writing", "Presentations Hub"]
-    },
-    fullstack: {
-      tag: "VERIFIED CREDENTIAL // DEVELOPMENT SYSTEM",
-      title: "Java Full Stack Development Node",
-      desc: "Verified Kodnest professional credential. Comprehensive training in relational SQL queries, Java Full Stack pipelines, MVC architectures, and web interface integrations.",
-      tech: ["Java Core", "REST API Development", "MVC Web", "SQL Relational"]
+    prompt_tech: {
+      tag: "VERIFIED CREDENTIAL // MSAGI",
+      title: "MSAGI – Generative AI Tech Stack and Prompt Engineering",
+      desc: "Certification focusing on production Generative AI stacks, prompt tuning techniques (Zero-shot, Few-shot, CoT, ReAct), and vector database integrations.",
+      tech: ["MSAGI Certified", "Prompt Engineering", "GenAI Tech Stack", "Vector Databases"]
     }
   };
 
@@ -474,6 +462,68 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Escape' && modal.classList.contains('active')) {
         modal.classList.remove('active');
         document.body.style.overflow = 'auto';
+      }
+    });
+  }
+
+  // 9. Real Form Handshake Dispatch Handler
+  const handshakeForm = document.getElementById('handshake-form');
+  const handshakeBtn = document.getElementById('handshake-btn');
+  const handshakeStatus = document.getElementById('handshake-status');
+
+  if (handshakeForm && handshakeBtn && handshakeStatus) {
+    handshakeForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('client-id').value.trim();
+      const email = document.getElementById('client-vector').value.trim();
+      const message = document.getElementById('payload').value.trim();
+
+      if (!name || !email || !message) return;
+
+      handshakeBtn.disabled = true;
+      handshakeBtn.innerText = 'DISPATCHING PACKET...';
+      handshakeStatus.style.display = 'block';
+      handshakeStatus.style.borderColor = 'rgba(212,175,55,0.4)';
+      handshakeStatus.style.color = 'var(--primary-gold)';
+      handshakeStatus.innerHTML = '⚡ [SYSTEM] Transmitting payload to vinayaluguru@gmail.com...';
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/vinayaluguru@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message,
+            _subject: `🤝 Portfolio Handshake Received from ${name}`
+          })
+        });
+
+        const result = await response.json();
+
+        if (response.ok || result.success === "true") {
+          handshakeStatus.style.borderColor = 'rgba(57,255,20,0.4)';
+          handshakeStatus.style.color = '#39FF14';
+          handshakeStatus.innerHTML = `✅ <strong>HANDSHAKE DISPATCHED SUCCESSFULLY!</strong><br><span style="font-size:0.75rem; color:var(--text-grey-muted);">Your message has been sent to vinayaluguru@gmail.com. We will respond to ${email} shortly.</span>`;
+          handshakeForm.reset();
+        } else {
+          throw new Error('Server returned non-ok status');
+        }
+      } catch (err) {
+        console.warn('Direct API submission error:', err);
+        const mailtoUrl = `mailto:vinayaluguru@gmail.com?subject=${encodeURIComponent('Portfolio Handshake from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message)}`;
+        window.location.href = mailtoUrl;
+
+        handshakeStatus.style.borderColor = 'rgba(57,255,20,0.4)';
+        handshakeStatus.style.color = '#39FF14';
+        handshakeStatus.innerHTML = `✅ <strong>EMAIL CLIENT DISPATCHED!</strong><br><span style="font-size:0.75rem; color:var(--text-grey-muted);">Opened email client to send directly to vinayaluguru@gmail.com.</span>`;
+      } finally {
+        handshakeBtn.disabled = false;
+        handshakeBtn.innerText = 'DISPATCH HANDSHAKE';
       }
     });
   }
