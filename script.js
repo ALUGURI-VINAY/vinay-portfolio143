@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const experienceData = {
     turing_ai: {
       tag: "EXPERIENCE RETROSPECTIVE // PRODUCTION AI",
-      title: "AI Engineer (Turing — Freelance, Remote)",
+      title: "AI Engineer (Turing — Remote)",
       desc: "Owned end-to-end delivery of RAG and multi-agent AI systems, from architecture design through production deployment on AWS. Led integration of multiple LLM providers (OpenAI, Claude, Gemini, Groq) into production workflows, ensuring reliable, context-aware responses at scale. Drove adoption of evaluation practices across projects—tracking retrieval accuracy, groundedness, latency, and hallucination rate to guide iteration. Integrated agentic AI frameworks and automation tools (LangChain, CrewAI, MCP, n8n) to build scalable backend services and automated workflows.",
       tech: ["Python", "FastAPI", "LangChain", "CrewAI", "MCP", "n8n", "OpenAI", "Claude", "Gemini", "Groq", "AWS EC2", "CI/CD"],
       actionLink: "mailto:vinayaluguru@gmail.com",
