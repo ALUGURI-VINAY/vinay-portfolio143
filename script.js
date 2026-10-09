@@ -243,25 +243,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const experienceData = {
     turing_ai: {
       tag: "EXPERIENCE RETROSPECTIVE // PRODUCTION AI",
-      title: "AI Engineer (Turing — Remote)",
-      desc: "Owned end-to-end delivery of RAG and multi-agent AI systems, from architecture design through production deployment on AWS. Led integration of multiple LLM providers (OpenAI, Claude, Gemini, Groq) into production workflows, ensuring reliable, context-aware responses at scale. Drove adoption of evaluation practices across projects—tracking retrieval accuracy, groundedness, latency, and hallucination rate to guide iteration. Integrated agentic AI frameworks and automation tools (LangChain, CrewAI, MCP, n8n) to build scalable backend services and automated workflows.",
-      tech: ["Python", "FastAPI", "LangChain", "CrewAI", "MCP", "n8n", "OpenAI", "Claude", "Gemini", "Groq", "AWS EC2", "CI/CD"],
+      title: "AI Engineer (Turing)",
+      desc: "Developed RAG and multi-agent AI systems, contributing to architecture, implementation, workflow testing, and AWS deployment. Built backend services and REST APIs to support AI-powered workflows. Integrated commercial LLM APIs and evaluated workflows for task completion, retrieval relevance, groundedness, latency, and hallucination rate.",
+      tech: ["Python", "FastAPI", "LangChain", "CrewAI", "MCP", "n8n", "OpenAI", "Claude", "Gemini", "Groq", "AWS", "Failure Analysis"],
       actionLink: "mailto:vinayaluguru@gmail.com",
       actionText: "CONTACT VIA EMAIL"
     },
     turing_s2: {
       tag: "EXPERIENCE RETROSPECTIVE // TRAJECTORY ALIGNMENT",
-      title: "LLM S2 Annotator — CUA Specialist (Turing)",
-      desc: "Created Computer Use Agent (CUA) trajectories from natural-language instructions to align multi-step agent behavior. Evaluated AI-generated outputs for reasoning quality, factual accuracy, safety compliance, and strict instruction adherence. Performed prompt evaluation, pairwise (SxS) response ranking, and automated hallucination detection across complex outputs. Investigated workflow and execution failures through systematic trace analysis and tool-call validation.",
-      tech: ["CUA Trajectories", "SxS Ranking", "Hallucination Detection", "Trace Analysis", "Tool-Call Validation", "Model Alignment"],
+      title: "LLM S2 Annotator (Turing)",
+      desc: "Created computer-use agent trajectories from natural-language instructions to assess multi-step agent behavior. Evaluated model responses for reasoning quality, factual accuracy, safety, instruction adherence, and task completion. Performed prompt evaluation, pairwise response ranking, and hallucination detection.",
+      tech: ["CUA Trajectories", "SxS Ranking", "Hallucination Detection", "Trace Analysis", "Tool-Call Validation", "Trajectory Alignment"],
       actionLink: "mailto:vinayaluguru@gmail.com",
       actionText: "CONTACT VIA EMAIL"
     },
     turing_agentic: {
       tag: "EXPERIENCE RETROSPECTIVE // MODEL TRAINING",
       title: "LLM Agentic Trainer (Turing)",
-      desc: "Trained AI/LLM models using Python, SQL, Git, JSON, and TAU tools across consecutive AI engineering workflows. Designed and developed agentic workflows, JSON-based task structures, and tool-integration setups for multi-step execution. Applied prompt engineering (Zero-shot, Few-shot, Chain-of-Thought, ReAct) and RLHF-based evaluation methodologies to improve model reasoning, trajectory accuracy, and output quality.",
-      tech: ["Python", "SQL", "Git", "JSON", "TAU Tools", "Chain-of-Thought", "ReAct Paradigm", "RLHF Evaluation"],
+      desc: "Worked with Python, SQL, Git, JSON, and TAU in AI training and evaluation tasks. Designed structured agent workflows, JSON task definitions, tool integrations, and benchmark prompts. Applied zero-shot, few-shot, Chain-of-Thought, and ReAct prompting approaches with RLHF evaluation.",
+      tech: ["Python", "SQL", "Git", "JSON", "TAU Tools", "Chain-of-Thought", "ReAct", "RLHF Evaluation"],
+      actionLink: "mailto:vinayaluguru@gmail.com",
+      actionText: "CONTACT VIA EMAIL"
+    },
+    global_quest: {
+      tag: "EXPERIENCE RETROSPECTIVE // FULL STACK INTERN",
+      title: "Python Full Stack Development Intern (Global Quest Technologies)",
+      desc: "Developed web applications and backend services using Python, FastAPI, REST APIs, SQL, HTML, and CSS. Built and integrated RESTful APIs for application features and frontend-to-backend communication while supporting debugging, testing, and Git workflows.",
+      tech: ["Python", "FastAPI", "REST APIs", "SQL", "HTML", "CSS", "Git", "Backend Development"],
       actionLink: "mailto:vinayaluguru@gmail.com",
       actionText: "CONTACT VIA EMAIL"
     }
