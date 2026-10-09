@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     turing_s2: {
       tag: "EXPERIENCE RETROSPECTIVE // TRAJECTORY ALIGNMENT",
-      title: "LLM S2 Annotator (Turing)",
+      title: "LLM S2 Annotator — OpenClaw CUA Specialist (Turing)",
       desc: "Created computer-use agent trajectories from natural-language instructions to assess multi-step agent behavior. Evaluated model responses for reasoning quality, factual accuracy, safety, instruction adherence, and task completion. Performed prompt evaluation, pairwise response ranking, and hallucination detection.",
       tech: ["CUA Trajectories", "SxS Ranking", "Hallucination Detection", "Trace Analysis", "Tool-Call Validation", "Trajectory Alignment"],
       actionLink: "mailto:vinayaluguru@gmail.com",
